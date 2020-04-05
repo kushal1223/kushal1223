@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <title></title>
+    <title>Escape the Classroom</title>
+    <link rel="stylesheet" type="text/css" href="styles\stylesheet.css"
 <body>
-    <div>
-        <p>Testing</p>
+    <!--TAB LINKS-->
+    <div class="tab">
+        <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'Home')">HOME</button>
+        <button class="tablinks" onclick="openTab(event, 'Play')">PLAY</button>
+        <a href="https://stevens150.com/" target="_blank"><button>STEVENS 150</button></a>
+        <button class="tablinks" onclick="openTab(event, 'About')">ABOUT</button>
     </div>
+
+    <!--TAB CONTENT-->
+    <div id="Home" class="tabcontent">
+        <div class="center">
+            <img src="images\logo_1.jpg" alt="ETCLogo" id="logo">
+            <h3>Do you have what it takes to escape?</h3>
+        </div>
+        <div class="pageContent">
+            <p>In honor of the 150th Anniversry of Stevens Institude of Technology, we can created a game that acknowledges the rich history
+                of Stevens. This game will test your knowledge of our university, academics, and maybe a few random topics that will surprise
+                you!</p>
+            <p>The game is pretty simple! Head on over to the "Play" tab where you will see different classrooms you can choose to escape 
+                from. You will be given 20 questions to answer. If you are able to prove your worth and answer all the questions correctly, 
+                you will be able to escape the classroom! Your escape time will be recorded as you play. Try to land a top spot on the 
+                leaderboard!</p>
+        </div>
+    </div>
+    
+    <div id="Play" class="tabcontent">
+        <p>This is the Play Tab</p>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <p>This is the About Tab</p>
+    </div>
+
+    <!--TAB SCRIPT-->
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it (opens on default)
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
 </head>
 </html>
