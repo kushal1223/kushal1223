@@ -3,7 +3,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <title>Escape the Classroom</title>
-    <link rel="stylesheet" type="text/css" href="styles\stylesheet.css"
+    <link rel="stylesheet" type="text/css" href="styles\stylesheet.css">
+</head>
+   
 <body>
     <!--TAB LINKS-->
     <div class="tab">
@@ -17,13 +19,13 @@
     <div id="Home" class="tabcontent">
         <div class="center">
             <img src="images\logo_1.jpg" alt="ETCLogo" id="logo">
-            <h3>Do you have what it takes to escape?</h3>
+            <h3 class=hometitle>DO YOU HAVE WHAT IT TAKES TO ESCAPE?</h3>
         </div>
         <div class="pageContent">
-            <p>In honor of the 150th Anniversry of Stevens Institude of Technology, we can created a game that acknowledges the rich history
+            <p class=welcome>In honor of the 150th Anniversry of Stevens Institude of Technology, we can created a game that acknowledges the rich history
                 of Stevens. This game will test your knowledge of our university, academics, and maybe a few random topics that will surprise
                 you!</p>
-            <p>The game is pretty simple! Head on over to the "Play" tab where you will see different classrooms you can choose to escape 
+            <p class=welcome>The game is pretty simple! Head on over to the "Play" tab where you will see different classrooms you can choose to escape 
                 from. You will be given 20 questions to answer. If you are able to prove your worth and answer all the questions correctly, 
                 you will be able to escape the classroom! Your escape time will be recorded as you play. Try to land a top spot on the 
                 leaderboard!</p>
@@ -36,7 +38,7 @@
         </div>
         <div class="row">
             <div class="column">
-              <img src="images\stevenslogo.jpg" width="150" height="200">
+              <img src="images\stevenslogo.jpg" onclick="room1.html" width="150" height="200">
             </div>
             <div class="column">
               <img src="images\stevenslogo.jpg" width="150" height="200">
@@ -49,10 +51,10 @@
             </div>
         </div>
         <div class="rooms">
-            <button class="btn btn1">Room 1</button>
-            <button class="btn btn2">Room 2</button>
-            <button class="btn btn3">Room 3</button>
-            <button class="btn btn4">Room 4</button>
+            <button class="btn btn1" onclick="window.location.href= 'room1.html';">ALTERFOR</button>
+            <button class="btn btn2" onclick="window.location.href= 'room1.html';">Room 2</button>
+            <button class="btn btn3" onclick="window.location.href= 'room1.html';">Room 3</button>
+            <button class="btn btn4" onclick="window.location.href= 'room1.html';">Room 4</button>
         </div>
     </div>
 
@@ -82,5 +84,5 @@
         document.getElementById("defaultOpen").click();
     </script>
 </body>
-</head>
+
 </html>

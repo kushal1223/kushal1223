@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>ESCAPE ALTERFOR DESGIN STUDIO</title>
+        <link rel="stylesheet" type="text/css" href="styles\stylesheet.css">
+    </head>
+
+<body>
+
+<!--TAB LINKS-->
+<div class="tab">
+    <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'Home')">HOME</button>
+    <button class="tablinks" onclick="openTab(event, 'Play')">PLAY</button>
+    <a href="https://stevens150.com/" target="_blank"><button>STEVENS 150</button></a>
+    <button class="tablinks" onclick="openTab(event, 'About')">ABOUT</button>
+</div>
+    
+<!--(FROM STEVENS SOFTE QS) Question1-->
+
+
+
+<!--(FROM STEVENS SOFTE QS) Answer1 (must be a number 1968)-->
+<img src="images\stevenslogo.jpg" width="150" height="200">
+<input id="answer1_1">
+<button class="answer_button" type="button" onclick="CheckNumber()">CHECK</button>
+<p class="result_out" id="result"></p>
+
+
+
+<script>
+
+//function that checks the answer-->
+//More edits needed to make a function that checks number for each designated value-->
+function CheckNumber() {
+  var x, text;
+  x = document.getElementById("answer1_1").value;
+
+  if(x==1968){
+      text= "CORRECT!"
+  }
+  else {
+    text = "INCORRECT!";
+  }
+  document.getElementById("result").innerHTML = text;
+}
+</script>
+
+</body>
+
+</html>
