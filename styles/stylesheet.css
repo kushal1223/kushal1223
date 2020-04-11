@@ -1,10 +1,9 @@
 * {
   box-sizing: border-box;
-  padding-left: 0.2cm;
-  padding-right: 0.2cm;
-   
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/*INDEX PAGE*/
 /* Style the navigation bar */
 .tab {
   overflow: hidden;
@@ -25,56 +24,48 @@
   
 /* Change background color of buttons on hover */
 .tab button:hover {
-  text-decoration: underline gray;
-}
-  
-/* Create an active/current tablink class */
-.tab button.active {
   text-decoration: underline red;
-}
-  
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
 }
 
 .center {
   padding-top: 25px;
   text-align: center;
+  border: 1px solid red;
 }
 
 #logo {
-  max-width: 50%;
+  max-width: 60%;
   display: inline-block;
-  border: 1px solid rgb(197, 110, 110);
 }
 
 .pageContent {
   padding-left: 50px;
   padding-right: 50px;
   font-family: Arial, Helvetica, sans-serif;
+  border: 1px red solid;
 }
-.hometitle { 
-  font-size: 40pt;
+
+.description {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.title { 
+  font-size: 300%;
   font-family: fantasy, serif;
   -webkit-text-fill-color: rgb(17, 154, 255);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color:rgb(66, 62, 62);
-  padding-left: 150;
-  padding-right: 150;
+  padding-left: 150px;
+  padding-right: 150px;
+}
 
-}
-.welcome {
-  padding-left: 200px;
-  padding-right: 200px;
-}
+/*PLAY PAGE*/
 .row {
   padding-left: 100px;
   padding-right:100px
 }
+
 .rooms {
   margin-left: 3px;
   text-align: center;
@@ -120,11 +111,12 @@
   z-index: -1;
   transition: 0.8s;
 }
+
 .btn1::before,.btn3::before,.btn2::before,.btn4::before {
   top: 0;
   border-radius: 0 0 50% 50%;
 }
-  
+ 
 .btn1:hover::before,.btn2:hover::before,.btn3:hover::before,.btn4:hover::before {
   height: 180%;
 }
@@ -141,12 +133,15 @@
   display: table;
 }
 
-/*PLAY*/
-.answer_button {
-  background-color: rgb(231, 141, 141);
+/*ABOUT TAB*/
+.profilePic {
+  border-radius: 50%;
+  width: 250px;
 }
 
-.result_out {
-  font-size: 30;
-  color:  gray;
+.profileContent {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 25%;
+  border: red 1px solid;
 }
