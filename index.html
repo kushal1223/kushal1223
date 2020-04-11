@@ -2,87 +2,36 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <title>Escape the Classroom</title>
+    <title>Escape the Classroom: Home</title>
     <link rel="stylesheet" type="text/css" href="styles\stylesheet.css">
 </head>
    
 <body>
-    <!--TAB LINKS-->
+    <!--PAGE LINKS-->
     <div class="tab">
-        <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'Home')">HOME</button>
-        <button class="tablinks" onclick="openTab(event, 'Play')">PLAY</button>
+        <a href="index.html"><button>HOME</button></a>
+        <a href="play.html"><button>PLAY</button></a>
         <a href="https://stevens150.com/" target="_blank"><button>STEVENS 150</button></a>
-        <button class="tablinks" onclick="openTab(event, 'About')">ABOUT</button>
+        <a href="about.html"><button>ABOUT</button></a>
     </div>
 
-    <!--TAB CONTENT-->
-    <div id="Home" class="tabcontent">
+    <!--PAGE CONTENT-->
+    <div class="tabcontent">
         <div class="center">
             <img src="images\logo_2.jpg" alt="ETCLogo" id="logo">
-            <h3 class=hometitle>DO YOU HAVE WHAT IT TAKES TO ESCAPE?</h3>
+            <h3 class="title">DO YOU HAVE WHAT IT TAKES TO ESCAPE?</h3>
         </div>
         <div class="pageContent">
-            <p class=welcome>In honor of the 150th Anniversry of Stevens Institude of Technology, we can created a game that acknowledges the rich history
-                of Stevens. This game will test your knowledge of our university, academics, and maybe a few random topics that will surprise
-                you!</p>
-            <p class=welcome>DIRECTIONS: The game is pretty simple! Head on over to the "Play" tab where you will see different classrooms you can choose to escape 
-                from. You will be given 20 questions to answer. If you are able to prove your worth and answer all the questions correctly, 
-                you will be able to escape the classroom! Your escape time will be recorded as you play. Try to land a top spot on the 
-                leaderboard!</p>
+            <p class="description">In honor of the 150th Anniversry of Stevens Institude of Technology, we can created a game that acknowledges 
+                the rich history of Stevens. This game will test your knowledge of our university, academics, and maybe a few random topics 
+                that will surprise you!</p>
+            <p class="description">DIRECTIONS: The game is pretty simple! Head on over to the "Play" tab where you will see different classrooms 
+                you can choose to escape from. You will be given 20 questions to answer. If you are able to prove your worth and answer 
+                all the questions correctly, you will be able to escape the classroom! Your escape time will be recorded as you play. 
+                Try to land a top spot on the leaderboard!</p>
         </div>
     </div>
     
-    <div id="Play" class="tabcontent">
-        <div class="playdetails">
-            <p>Welcome to the Game! Choose a room and get started.</p>
-        </div>
-        <div class="row">
-            <div class="column">
-              <img src="images\stevenslogo.jpg" onclick="room1.html" width="150" height="200">
-            </div>
-            <div class="column">
-              <img src="images\stevenslogo.jpg" width="150" height="200">
-            </div>
-            <div class="column">
-              <img src="images\stevenslogo.jpg" width="150" height="200">
-            </div>
-            <div class="column">
-                <img src="images\stevenslogo.jpg" width="150" height="200">
-            </div>
-        </div>
-        <div class="rooms">
-            <button class="btn btn1" onclick="window.location.href= 'room1.html';">ALTERFOR</button>
-            <button class="btn btn2" onclick="window.location.href= 'room1.html';">Room 2</button>
-            <button class="btn btn3" onclick="window.location.href= 'room1.html';">Room 3</button>
-            <button class="btn btn4" onclick="window.location.href= 'room1.html';">Room 4</button>
-        </div>
-    </div>
-
-    <div id="About" class="tabcontent">
-        <p>This is the About Tab</p>
-    </div>
-
-    <!--TAB SCRIPT-->
-    <script>
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-        // Get the element with id="defaultOpen" and click on it (opens on default)
-        document.getElementById("defaultOpen").click();
-    </script>
 </body>
 
 </html>
