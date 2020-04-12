@@ -145,3 +145,91 @@
   width: 25%;
   border: red 1px solid;
 }
+
+/* Playroom */
+.roombody{
+  margin:30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+  border-radius: 30px;
+  width:980px;
+  height: 640px;
+  background: rgb(87, 171, 240);
+  margin: 70px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container .box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: rgb(245, 220, 108);
+  margin:10px; /*btw pictures*/
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+.container .box .imgbox {
+  position: relative;
+  overflow: hidden; /*image expands inside*/
+}
+
+.container .box .imgbox img {
+  border-radius: 30px 30px 0 0;
+  max-width: 100%;
+  transition: transform 1s; /**speed of picture*/
+}
+
+.container .box:hover .imgbox img {
+  transform: scale(1,1.4)
+}
+
+/*question appear &color/shape*/
+.container .box .word {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  bottom: 110px; /*to show answerbox*/
+  right: 10px;
+  background :#fedc95;
+  transform: scaleY(0); /*zero here*/
+  transition: transform 0.5s;
+  border-radius: 30px;
+}
+
+.container .box:hover .word {
+  transform: scaleY(1); /*one here*/
+}
+
+.container .box .word .question{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /*middle*/
+  text-align:center;
+  padding: 20px; /*space btw texts and box*/
+ 
+}
+
+/*question words font (color/size) */
+.container .box .word p{
+margin: 10px 0 0 ;
+padding: 3;
+font-size:14;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color:black;
+}
+
+/*answer box*/
+.container .box .answer{
+  margin: 10px 0 0 ;
+  padding: 3;
+  text-align: center;
+  }
+
+
+
