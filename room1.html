@@ -7,43 +7,249 @@
 <body>
 
 <!--TAB LINKS-->
+
 <div class="tab">
   <a href="index.html"><button>HOME</button></a>
   <a href="play.html"><button>PLAY</button></a>
   <a href="https://stevens150.com/" target="_blank"><button>STEVENS 150</button></a>
   <a href="about.html"><button>ABOUT</button></a>
 </div>
-    
+
 <!--(FROM STEVENS SOFTE QS) Question1-->
+<div class="roombody"> 
+<p>answers are 1968, 6, 215, 1989, 141.    For 6th, I am thinking of doing freebie  since it's SOFTWARE ENG LAB</p>
+  <div class=q/a>
+  <div class ="container">
 
+    <!--Question1_1-->
+    <div class= "box">
 
+      <div class= "imgbox">
+        <img src="images/softe.jpg"  width="300" height="250">
+      </div>
+      <div class="word"> 
+        <div class="question">
+        <p>
+          When is the birth of Software Engineering at the NATO Software Engineering Conference in response to the software crisis?
+        </p>
+        </div>
+      </div>
 
-<!--(FROM STEVENS SOFTE QS) Answer1 (must be a number 1968)-->
-<img src="images\stevenslogo.jpg" width="150" height="200">
-<input id="answer1_1">
-<button class="answer_button" type="button" onclick="CheckNumber()">CHECK</button>
-<p class="result_out" id="result"></p>
+      <div class="answer">
+        <input id="answer11"> <!--answer must be 1968 -->
+        <button class="answer_button" type="button" onclick="CheckAns11()">CHECK</button>
+        <p class="result_out" id="result11"></p>
+      </div>
 
+    </div>
+  <!--Question1_2-->
+    <div class= "box">
 
+      <div class= "imgbox">
+        <img src="images/code.jpg"  width="300" height="250">
+      </div>
+      <div class="word"> 
+        <div class="question">
+        <p>
+          What "list1 = [ 1, 2, 3, 4, 5, 6 ] print(list1.pop())" will return?
+        </p>
+        </div>
+      </div>
+      
+      <div class="answer">
+        <input id="answer12"> <!--answer must be 1968 -->
+        <button class="answer_button" type="button" onclick="CheckAns12()">CHECK</button>
+        <p class="result_out" id="result12"></p>
+      </div>
 
+    </div>
+
+    <!--Question1_3-->
+    <div class= "box">
+
+      <div class= "imgbox">
+        <img src="images/215.jpg"  width="300" height="250">
+      </div>
+      <div class="word"> 
+        <div class="question">
+        <p>
+          What is the course number for “SSW Individual Software Engineering”
+        </p>
+        </div>
+      </div>
+
+      <div class="answer">
+        <input id="answer13"> <!--answer must be 1968 -->
+        <button class="answer_button" type="button" onclick="CheckAns13()">CHECK</button>
+        <p class="result_out" id="result13"></p>
+      </div>
+
+    </div>
+
+    <!--Question1_4-->
+    <div class= "box">
+
+      <div class= "imgbox">
+        <img src="images/pythonlogo.jpg"  width="300" height="250">
+      </div>
+      <div class="word"> 
+        <div class="question">
+        <p>
+          In what year, Python’s first implementation began?
+        </p>
+        </div>
+      </div>
+
+      <div class="answer">
+        <input id="answer14"> <!--answer must be 1968 -->
+        <button class="answer_button" type="button" onclick="CheckAns14()">CHECK</button>
+        <p class="result_out" id="result14"></p>
+      </div>
+
+    </div>
+
+    <!--Question1_5-->
+    <div class= "box">
+
+      <div class= "imgbox">
+        <img src="images/catalog.jpg"  width="300" height="250">
+      </div>
+      <div class="word"> 
+        <div class="question">
+        <p>
+          How many credit hours does the four-year degree of software engineering compose of?
+        </p>
+        </div>
+      </div>
+
+      <div class="answer">
+        <input id="answer15"> <!--answer must be 1968 -->
+        <button class="answer_button" type="button" onclick="CheckAns15()">CHECK</button>
+        <p class="result_out" id="result15"></p>
+      </div>
+
+    </div>
+
+    <!--Question1_6-->
+    <div class= "box">
+
+      <div class= "imgbox">
+        <img src="images/free.jpg"  width="300" height="250">
+      </div>
+      <div class="word"> 
+        <div class="question">
+        <p>
+          FREEBIE! Answer is 7!
+        </p>
+        </div>
+      </div>
+
+      <div class="answer">
+        <input id="answer16"> <!--answer must be 1968 -->
+        <button class="answer_button" type="button" onclick="CheckAns16()">CHECK</button>
+        <p class="result_out" id="result16"></p>
+      </div>
+
+    </div>
+
+    </div>
+  </div>
+  
+</div>
 <script>
 
-//function that checks the answer-->
-//More edits needed to make a function that checks number for each designated value-->
-function CheckNumber() {
+//function that checks the answer
+//****Fucntion Name Rules:
+//****CheckAns11 means 1st room's 1st answer
+//****result11 represetns the correct answer for 1st room's 1st question
+
+//function that checks the answer input of Question 1
+function CheckAns11() {
   var x, text;
-  x = document.getElementById("answer1_1").value;
+  x = document.getElementById("answer11").value;
 
   if(x==1968){
       text= "CORRECT!"
   }
   else {
+    text = "INCORRECT!"
+  }
+  document.getElementById("result11").innerHTML = text;
+}
+
+//function that checks the answer input of Question 2
+function CheckAns12() {
+  var x, text;
+  x = document.getElementById("answer12").value;
+
+  if(x==6){
+      text= "CORRECT!"
+  }
+  else {
     text = "INCORRECT!";
   }
-  document.getElementById("result").innerHTML = text;
+  document.getElementById("result12").innerHTML = text;
 }
+
+//function that checks the answer input of Question 3
+function CheckAns13() {
+  var x, text;
+  x = document.getElementById("answer13").value;
+
+  if(x==215){
+      text= "CORRECT!"
+  }
+  else {
+    text = "INCORRECT!";
+  }
+  document.getElementById("result13").innerHTML = text;
+}
+
+//function that checks the answer input of Question 4
+function CheckAns14() {
+  var x, text;
+  x = document.getElementById("answer14").value;
+
+  if(x==1989){
+      text= "CORRECT!"
+  }
+  else {
+    text = "INCORRECT!";
+  }
+  document.getElementById("result14").innerHTML = text;
+}
+
+//function that checks the answer input of Question 5
+function CheckAns15() {
+  var x, text;
+  x = document.getElementById("answer14").value;
+
+  if(x==1989){
+      text= "CORRECT!"
+  }
+  else {
+    text = "INCORRECT!";
+  }
+  document.getElementById("result14").innerHTML = text;
+}
+
+//function that checks the answer input of Question 6
+function CheckAns16() {
+  var x, text;
+  x = document.getElementById("answer16").value;
+
+  if(x==7){
+      text= "CORRECT!"
+  }
+  else {
+    text = "INCORRECT!";
+  }
+  document.getElementById("result16").innerHTML = text;
+}
+
 </script>
 
-</body>
 
+
+</body>
 </html>
