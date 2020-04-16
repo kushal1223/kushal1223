@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <title>Escape the Classroom: Play</title>
@@ -17,30 +18,38 @@
 
     <!--PAGE CONTENT-->
     <div class="tabcontent">
-        <div class="playdetails">
-            <p>Welcome to the Game! Choose a room and get started.</p>
+        <h3 class="titleplay">Welcome to the Game! Choose a Room to Escape.</h3>
+        
+        <div class="wrapper">
+            <div class="parent" onclick="window.location.href= 'room1.html';">
+                <div class="child bg-one">
+                    <img src="images\McLean.jpg" width=100% height=100%>
+                    <span>Chemistry Lab</span>
+                </div>
+            </div>
+        
+            <div class="parent right" onclick="window.location.href= 'room1.html';">
+                <div class="child bg-two">
+                    <img src="images\McLean.jpg" width=100% height=100%>
+                    <span>Chemistry Lab</span>
+                </div>
+            </div>
+        
+            <div class="parent" onclick="window.location.href= 'room1.html';">
+                <div class="child bg-three">
+                    <img src="images\McLean.jpg" width=100% height=100%>
+                    <span>Chemistry Lab</span>
+                </div>
+            </div>
+        
+            <div class="parent right" onclick="window.location.href= 'room1.html';">
+                <div class="child bg-four">
+                    <img src="images\McLean.jpg" width=100% height=100%>
+                    <span>Chemistry Lab</span>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="column">
-              <img src="images\stevenslogo.jpg" onclick="room1.html" width="150" height="200">
-            </div>
-            <div class="column">
-              <img src="images\stevenslogo.jpg" width="150" height="200">
-            </div>
-            <div class="column">
-              <img src="images\stevenslogo.jpg" width="150" height="200">
-            </div>
-            <div class="column">
-                <img src="images\stevenslogo.jpg" width="150" height="200">
-            </div>
-        </div>
-        <div class="rooms">
-            <button class="btn btn1" onclick="window.location.href= 'room1.html';">ALTERFOR</button>
-            <button class="btn btn2" onclick="window.location.href= 'room1.html';">Room 2</button>
-            <button class="btn btn3" onclick="window.location.href= 'room1.html';">Room 3</button>
-            <button class="btn btn4" onclick="window.location.href= 'room1.html';">Room 4</button>
-        </div>
-    </div>
+       
     
 </body>
 
