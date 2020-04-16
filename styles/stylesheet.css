@@ -233,3 +233,101 @@ color:black;
 
 
 
+/*PLAY TAB EDITED*/
+.titleplay { 
+  font-size: 300%;
+  font-family: fantasy, serif;
+  -webkit-text-fill-color: rgb(2, 11, 17);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color:rgb(250, 250, 250);
+  text-align: center;
+}
+.wrapper {
+    padding: 0px 0px;
+    max-width: 1200px;
+    text-align: center;
+	margin:50px auto;
+}
+.parent {
+    width: 45%;
+    margin: 20px;
+    height: 300px;
+    border: 4px solid #fff;
+    overflow: hidden;
+    position: relative;
+    /*float: left;*/
+    display: inline-block;
+	cursor: pointer;
+}
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s;
+}
+
+span {
+    display: none;
+    font-size: 35px;
+    color: #ffffff ;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+}
+.parent:hover .child, .parent:focus .child {
+    transform: scale(1.3);
+}
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+.parent:hover span, .parent:focus span {
+    display: block;
+}
+.bg-one:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(6, 248, 38, 0.938);
+}
+.bg-two:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(216, 248, 32, 0.938);
+}
+.bg-three:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(32, 90, 250, 0.938);
+}
+.bg-four:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(248, 42, 15, 0.938);
+}
