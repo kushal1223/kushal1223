@@ -28,7 +28,7 @@
 }
 
 .center {
-  padding-top: 25px;
+  padding-top: 5%;
   text-align: center;
   border: 1px solid red;
 }
@@ -39,8 +39,8 @@
 }
 
 .pageContent {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
   font-family: Arial, Helvetica, sans-serif;
   border: 1px red solid;
 }
@@ -58,6 +58,64 @@
   -webkit-text-stroke-color:rgb(66, 62, 62);
   padding-left: 150px;
   padding-right: 150px;
+}
+
+/*Picture Gallery*/
+.columnPic {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  position: relative;
+}
+
+.rowPic {
+  border: red solid 1px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.columnPic:hover .overlay {
+  opacity: 1;
+}
+
+.columnPic:hover .image {
+  opacity: 0.3;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* Clearfix (clear floats) */
+.rowPic::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /*PLAY PAGE*/
@@ -217,11 +275,11 @@
 
 /*question words font (color/size) */
 .container .box .word p{
-margin: 10px 0 0 ;
-padding: 3;
-font-size:14;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color:black;
+  margin: 10px 0 0 ;
+  padding: 3;
+  font-size:14;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:black;
 }
 
 /*answer box*/
@@ -229,7 +287,7 @@ color:black;
   margin: 10px 0 0 ;
   padding: 3;
   text-align: center;
-  }
+}
 
 
 
@@ -242,65 +300,73 @@ color:black;
   -webkit-text-stroke-color:rgb(250, 250, 250);
   text-align: center;
 }
+
 .wrapper {
-    padding: 0px 0px;
-    max-width: 1200px;
-    text-align: center;
+  padding: 0px 0px;
+  max-width: 1200px;
+  text-align: center;
 	margin:50px auto;
 }
+
 .parent {
-    width: 45%;
-    margin: 20px;
-    height: 300px;
-    border: 4px solid #fff;
-    overflow: hidden;
-    position: relative;
-    /*float: left;*/
-    display: inline-block;
+  width: 45%;
+  margin: 20px;
+  height: 300px;
+  border: 4px solid #fff;
+  overflow: hidden;
+  position: relative;
+  /*float: left;*/
+  display: inline-block;
 	cursor: pointer;
 }
+
 .child {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: all .5s;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all .5s;
 }
 
 span {
-    display: none;
-    font-size: 35px;
-    color: #ffffff ;
-    font-family: sans-serif;
-    text-align: center;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 50px;
-    cursor: pointer;
+  display: none;
+  font-size: 35px;
+  color: #ffffff ;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: pointer;
 }
+
 .parent:hover .child, .parent:focus .child {
-    transform: scale(1.3);
+  transform: scale(1.3);
 }
+
 .parent:hover .child:before, .parent:focus .child:before {
-    display: block;
+  display: block;
 }
+
 .parent:hover span, .parent:focus span {
-    display: block;
+  display: block;
 }
+
 .bg-one:before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(6, 248, 38, 0.938);
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(6, 248, 38, 0.938);
 }
+
 .bg-two:before {
   content: "";
   display: none;
@@ -311,6 +377,7 @@ span {
   left: 0;
   background-color: rgba(216, 248, 32, 0.938);
 }
+
 .bg-three:before {
   content: "";
   display: none;
@@ -321,6 +388,7 @@ span {
   left: 0;
   background-color: rgba(32, 90, 250, 0.938);
 }
+
 .bg-four:before {
   content: "";
   display: none;
