@@ -399,3 +399,20 @@ span {
   left: 0;
   background-color: rgba(248, 42, 15, 0.938);
 }
+
+.image4{
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.column {
+  float: left;
+  width: 10%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
