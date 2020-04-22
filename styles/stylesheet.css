@@ -5,9 +5,15 @@
 
 /*INDEX PAGE*/
 /* Style the navigation bar */
+.indexBackground {
+  background-image: url("indexBack.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .tab {
   overflow: hidden;
-  border-bottom: 7px solid black;
+  border-bottom: 10px solid black;
 }
   
 /* Style the buttons that are used to open the tab content */
@@ -30,7 +36,7 @@
 .center {
   padding-top: 5%;
   text-align: center;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 #logo {
@@ -42,18 +48,19 @@
   padding-left: 5%;
   padding-right: 5%;
   font-family: Arial, Helvetica, sans-serif;
-  border: 1px red solid;
+  /*border: 1px red solid;*/
 }
 
 .description {
-  padding-left: 200px;
-  padding-right: 200px;
+  font-size: 16pt;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .title { 
   font-size: 300%;
-  font-family: fantasy, serif;
-  -webkit-text-fill-color: rgb(17, 154, 255);
+  font-family: Impact, serif;
+  -webkit-text-fill-color: rgb(246, 49, 16);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color:rgb(66, 62, 62);
   padding-left: 150px;
@@ -69,7 +76,7 @@
 }
 
 .rowPic {
-  border: red solid 1px;
+  /*border: red solid 1px;*/
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -90,7 +97,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%);
 }
 
 .columnPic:hover .overlay {
@@ -99,16 +106,6 @@
 
 .columnPic:hover .image {
   opacity: 0.3;
-}
-
-.text {
-  color: black;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
 }
 
 /* Clearfix (clear floats) */
