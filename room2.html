@@ -227,8 +227,8 @@
 	}
 
 	function checkquestion2() {
-		var ans = document.getElementById("ans2").value;
-		if(ans == "Calhoun") {
+		var ans = document.getElementById("ans2").value.toLowerCase();
+		if(ans == "calhoun") {
 			var res = "Correct!";
 			answer2 = true;
 			var circle = document.getElementsByClassName("questionButton");
@@ -260,7 +260,7 @@
 
   function checkquestion4() {
 		var ans = document.getElementById("ans4").value.toLowerCase();
-		if(ans == "Brownlee" || "brownlee") {
+		if(ans == "brownlee") {
 			var res = "Correct!";
 			answer4 = true;
 			var circle = document.getElementsByClassName("questionButton");
@@ -275,7 +275,7 @@
 	}
 
   function checkquestion5() {
-		var ans = document.getElementById("ans5").value.toLowerCase();
+		var ans = document.getElementById("ans5").value;
 		if(ans == 2018) {
 			var res = "Correct!";
 			answer5 = true;
@@ -339,8 +339,8 @@
 	}
 
   function checkquestion9() {
-		var ans = document.getElementById("ans9").value;
-		if(ans == "zarf" || "Zarf") {
+		var ans = document.getElementById("ans9").value.toLowerCase();
+		if(ans == "zarf") {
 			var res = "Correct!";
 			answer9 = true;
 			var circle = document.getElementsByClassName("questionButton");
@@ -355,8 +355,8 @@
 	}
 
   function checkquestion10() {
-		var ans = document.getElementById("ans10").value.toLowerCase();
-		if(ans== 20252) {
+		var ans = document.getElementById("ans10").value;
+		if(ans == 20252) {
 			var res = "Correct!";
 			answer10 = true;
 			var circle = document.getElementsByClassName("questionButton");
