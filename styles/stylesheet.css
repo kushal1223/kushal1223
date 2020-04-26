@@ -126,7 +126,7 @@
 
 /*PLAY TAB EDITED----------------------------------------------------------------------------------------------------------------------*/
 .titleplay { 
-  font-size: 300%;
+  font-size: 320%;
   font-family: fantasy, serif;
   -webkit-text-fill-color: rgb(2, 11, 17);
   -webkit-text-stroke-width: 2px;
@@ -163,7 +163,7 @@
 
 span {
   display: none;
-  font-size: 35px;
+  font-size: 30px;
   color: #ffffff ;
   font-family: sans-serif;
   text-align: center;
@@ -197,7 +197,7 @@ span {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(6, 248, 38, 0.938);
+  background-color: rgba(248, 230, 147, 0.9);
 }
 
 .bg-two:before {
@@ -208,7 +208,7 @@ span {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(216, 248, 32, 0.938);
+  background-color: rgba(124, 174, 248, 0.938);
 }
 
 .bg-three:before {
@@ -219,7 +219,7 @@ span {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(32, 90, 250, 0.938);
+  background-color: rgba(180, 157, 79, 0.938);
 }
 
 .bg-four:before {
@@ -230,7 +230,7 @@ span {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(248, 42, 15, 0.938);
+  background-color: rgba(138, 216, 247, 0.938);
 }
 
 /*ROOM PAGES----------------------------------------------------------------------------------------------------------------------*/
