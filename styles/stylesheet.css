@@ -197,7 +197,7 @@ span {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(248, 230, 147, 0.9);
+  background-color: rgba(250, 250, 0, 0.9);
 }
 
 .bg-two:before {
@@ -208,7 +208,7 @@ span {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(124, 174, 248, 0.938);
+  background-color: rgba(0, 0, 250, 0.9);
 }
 
 .bg-three:before {
@@ -219,7 +219,7 @@ span {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(180, 157, 79, 0.938);
+  background-color: rgba(250, 0, 0, 0.9);
 }
 
 .bg-four:before {
@@ -230,7 +230,7 @@ span {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(138, 216, 247, 0.938);
+  background-color: rgba(0, 250, 0, 0.9);
 }
 
 /*ROOM PAGES----------------------------------------------------------------------------------------------------------------------*/
