@@ -30,7 +30,7 @@
   
 /* Change background color of buttons on hover */
 .tab button:hover {
-  text-decoration: underline red;
+  text-decoration: underline rgb(248, 193, 90);
 }
 
 .center {
@@ -50,17 +50,18 @@
 }
 
 .description {
-  font-size: 16pt;
+  font-size: 12pt;
   padding-left: 20%;
   padding-right: 20%;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 
 .title { 
-  font-size: 300%;
-  font-family: Impact, serif;
-  -webkit-text-fill-color: rgb(246, 49, 16);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color:rgb(66, 62, 62);
+  font-size: 230%;
+  font-family: Copperplate, Copperplate Gothic Light, sans-serif;
+  -webkit-text-fill-color: rgb(12, 12, 10);
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color:rgb(15, 6, 3);
   padding-left: 150px;
   padding-right: 150px;
 }
@@ -122,6 +123,21 @@
   padding-left: 50px;
   padding-right: 50px;
   width: 25%;
+}
+
+.name, .contributor {
+  text-align: center;
+  font-size: 120%;
+  font-family: Copperplate, Copperplate Gothic Light, sans-serif;
+}
+
+.contributor{
+  font-size: 200%;
+}
+
+.profileDescription{
+  font-size: 100%;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 
 /*PLAY TAB EDITED----------------------------------------------------------------------------------------------------------------------*/
