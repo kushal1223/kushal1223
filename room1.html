@@ -17,7 +17,368 @@
   <a href="about.html"><button>ABOUT</button></a>
 </div>
 
+<h3 class="titleplay">Altorfer Design Studio</h3>
+<h3 align="center">Click on a question to get started! Answer all of them correctly to escape. Good Luck!</h4>
+<div class="row">
+    <div class="column">
+        <button class="questionButton" onclick="getquestion1()">1</button>
+    </div>
+    <div class="column">
+        <button class="questionButton" onclick="getquestion2()">2</button>
+    </div>
+    <div class="column">
+        <button class="questionButton" onclick="getquestion3()">3</button>
+    </div>
+    <div class="column">
+        <button class="questionButton" onclick="getquestion4()">4</button>
+    </div>
+    <div class="column">
+        <button class="questionButton" onclick="getquestion5()">5</button>
+    </div>
+    <div class="column">
+        <button class="questionButton" onclick="getquestion6()">6</button>
+    </div>
+    <div class="column">
+        <button class="questionButton" onclick="getquestion7()">7</button>
+    </div>
+    <div class="column">
+        <button class="questionButton" onclick="getquestion8()">8</button>
+    </div>
+    <div class="column">
+        <button class="questionButton" onclick="getquestion9()">9</button>
+    </div>
+    <div class="column">
+        <button class="questionButton" onclick="getquestion10()">10</button>
+    </div>
+</div>
 
+<div class="game">
+
+  <div class="theRoom">
+    <img src="images\Altorfer.JPG" alt="Altorfer" id="roomPic">
+  </div>
+
+  <div class="questionBox" id="question1">
+    <h3>Question 1</h3>
+    <p>What was the original name for Google?</p>
+    <input id="ans1" type="text" placeholder="Enter Answer">
+    <button onclick="checkquestion1()">Check</button>
+    <p class="result"></p>
+  </div>
+  <div class="questionBox" id="question2">
+    <h3>Question 2</h3>
+    <p>When is the birth of Software Engineering at the NATO Software Engineering Conference in response to the software crisis?</p>
+    <input id="ans2" type="text" placeholder="Enter Answer">
+    <button onclick="checkquestion2()">Check</button>
+    <p class="result"></p>
+  </div>
+  <div class="questionBox" id="question3">
+    <h3>Question 3</h3>
+    <p>list1=[ 1, 2, 3, 4, 5, 6] print(list1.pop())
+        What is the output?
+        </p>
+    <input id="ans3" type="text" placeholder="Enter Answer">
+    <button onclick="checkquestion3()">Check</button>
+    <p class="result"></p>
+  </div>
+  <div class="questionBox" id="question4">
+    <h3>Question 4</h3>
+    <p>How many credit hours does the four-year degree of software engineering compose of?</p>
+    <input id="ans4" type="text" placeholder="Enter Answer">
+    <button onclick="checkquestion4()">Check</button>
+    <p class="result"></p>
+  </div>
+  <div class="questionBox" id="question5">
+    <h3>Question 5</h3>
+    <p>What is the inscription on the Cannon on Castle Point? Enter the word only</p>
+    <input id="ans5" type="text" placeholder="Enter Answer">
+    <button onclick="checkquestion5()">Check</button>
+    <p class="result"></p>
+  </div>
+  <div class="questionBox" id="question6">
+    <h3>Question 6</h3>
+    <p>What year was Castle Stevens built?</p>
+    <input id="ans6" type="text" placeholder="Enter Answer">
+    <button onclick="checkquestion6()">Check</button>
+    <p class="result"></p>
+  </div>
+  <div class="questionBox" id="question7">
+    <h3>Question 7</h3>
+    <p>What is the only state in the US that can be typed on one row of a keyboard?</p>
+    <input id="ans7" type="text" placeholder="Enter Answer">
+    <button onclick="checkquestion7()">Check</button>
+    <p class="result"></p>
+  </div>
+  <div class="questionBox" id="question8">
+    <h3>Question 8</h3>
+    <p>What year was the School of Systems and Enterprises established?</p>
+    <input id="ans8" type="text" placeholder="Enter Answer">
+    <button onclick="checkquestion8()">Check</button>
+    <p class="result"></p>
+  </div>
+  <div class="questionBox" id="question9">
+    <h3>Question 9</h3>
+    <p>How many undergraduate programs does Stevens have?</p>
+    <input id="ans9" type="text" placeholder="Enter Answer">
+    <button onclick="checkquestion9()">Check</button>
+    <p class="result"></p>
+  </div>
+  <div class="questionBox" id="question10">
+    <h3>Question 10</h3>
+    <p>How old was Lenore Schupak, the first female to graduate from Stevens, when she enrolled into Stevens?</p>
+    <input id="ans10" type="text" placeholder="Enter Answer">
+    <button onclick="checkquestion10()">Check</button>
+    <p class="result"></p>
+  </div>
+  <br>
+  <div id="escape" align="center">
+    <a href="winner.html"><button>ESCAPE!</button></a>
+  </div>
+</div>
+
+<script>
+  var answer1 = false;
+  var answer2 = false;
+  var answer3 = false;
+  var answer4 = false;
+  var answer5 = false;
+  var answer6 = false;
+  var answer7 = false;
+  var answer8 = false;
+  var answer9 = false;
+  var answer10 = false;
+
+	function getquestion1() {
+		closequestions();
+		document.getElementById("question1").style.display = "block";
+	}
+
+	function getquestion2() {
+		closequestions();
+		document.getElementById("question2").style.display = "block";
+	}
+
+  function getquestion3() {
+		closequestions();
+		document.getElementById("question3").style.display = "block";
+	}
+
+  function getquestion4() {
+		closequestions();
+		document.getElementById("question4").style.display = "block";
+	}
+
+  function getquestion5() {
+		closequestions();
+		document.getElementById("question5").style.display = "block";
+	}
+
+  function getquestion6() {
+		closequestions();
+		document.getElementById("question6").style.display = "block";
+	}
+
+  function getquestion7() {
+		closequestions();
+		document.getElementById("question7").style.display = "block";
+	}
+
+  function getquestion8() {
+		closequestions();
+		document.getElementById("question8").style.display = "block";
+	}
+
+  function getquestion9() {
+		closequestions();
+		document.getElementById("question9").style.display = "block";
+	}
+
+  function getquestion10() {
+		closequestions();
+		document.getElementById("question10").style.display = "block";
+	}
+
+	function closequestions() {
+		document.getElementById("question1").style.display = "none";
+		document.getElementById("question2").style.display = "none";
+    document.getElementById("question3").style.display = "none";
+    document.getElementById("question4").style.display = "none";
+    document.getElementById("question5").style.display = "none";
+    document.getElementById("question6").style.display = "none";
+    document.getElementById("question7").style.display = "none";
+    document.getElementById("question8").style.display = "none";
+    document.getElementById("question9").style.display = "none";
+    document.getElementById("question10").style.display = "none";
+	}
+
+	function checkquestion1() {
+		var ans = document.getElementById("ans1").value.toLowerCase();
+		if(ans == "backrub") {
+			var res = "Correct!";
+			answer1 = true;
+			var circle = document.getElementsByClassName("questionButton");
+			circle[0].style.backgroundColor = "#4CDF27";
+		}
+		else {
+			var res = "Try Again!";
+		}
+
+		document.getElementsByClassName("result")[0].innerHTML = res;
+    checkEscape();
+	}
+
+	function checkquestion2() {
+		var ans = document.getElementById("ans2").value;
+		if(ans == 1968) {
+			var res = "Correct!";
+			answer2 = true;
+			var circle = document.getElementsByClassName("questionButton");
+			circle[1].style.backgroundColor = "#4CDF27";
+		}
+		else {
+			var res = "Try Again!";
+		}
+
+		document.getElementsByClassName("result")[1].innerHTML = res;
+    checkEscape();
+	}
+
+  function checkquestion3() {
+		var ans = document.getElementById("ans3").value;
+		if(ans == 6) {
+			var res = "Correct!";
+			answer3 = true;
+			var circle = document.getElementsByClassName("questionButton");
+			circle[2].style.backgroundColor = "#4CDF27";
+		}
+		else {
+			var res = "Try Again!";
+		}
+
+		document.getElementsByClassName("result")[2].innerHTML = res;
+    checkEscape();
+	}
+
+  function checkquestion4() {
+        var ans = document.getElementById("ans4").value;
+		if(ans == 141) {
+			var res = "Correct!";
+			answer4 = true;
+			var circle = document.getElementsByClassName("questionButton");
+			circle[3].style.backgroundColor = "#4CDF27";
+		}
+		else {
+			var res = "Try Again!";
+		}
+
+		document.getElementsByClassName("result")[3].innerHTML = res;
+    checkEscape();
+	}
+
+  function checkquestion5() {
+		var ans = document.getElementById("ans5").value.toLowerCase();
+		if(ans == "stratsbourg") {
+			var res = "Correct!";
+			answer5 = true;
+			var circle = document.getElementsByClassName("questionButton");
+			circle[4].style.backgroundColor = "#4CDF27";
+		}
+		else {
+			var res = "Try Again!";
+		}
+
+		document.getElementsByClassName("result")[4].innerHTML = res;
+    checkEscape();
+	}
+
+  function checkquestion6() {
+		var ans = document.getElementById("ans6").value;
+		if(ans == 1853) {
+			var res = "Correct!";
+			answer6 = true;
+			var circle = document.getElementsByClassName("questionButton");
+			circle[5].style.backgroundColor = "#4CDF27";
+		}
+		else {
+			var res = "Try Again!";
+		}
+
+		document.getElementsByClassName("result")[5].innerHTML = res;
+    checkEscape();
+	}
+
+  function checkquestion7() {
+        var ans = document.getElementById("ans7").value.toLowerCase();
+		if(ans == "alaska") {
+			var res = "Correct!";
+			answer7 = true;
+			var circle = document.getElementsByClassName("questionButton");
+			circle[6].style.backgroundColor = "#4CDF27";
+		}
+		else {
+			var res = "Try Again!";
+		}
+
+		document.getElementsByClassName("result")[6].innerHTML = res;
+    checkEscape();
+	}
+
+  function checkquestion8() {
+		var ans = document.getElementById("ans8").value;
+		if(ans == 2007) {
+			var res = "Correct!";
+			answer8 = true;
+			var circle = document.getElementsByClassName("questionButton");
+			circle[7].style.backgroundColor = "#4CDF27";
+		}
+		else {
+			var res = "Try Again!";
+		}
+
+		document.getElementsByClassName("result")[7].innerHTML = res;
+    checkEscape();
+	}
+
+  function checkquestion9() {
+		var ans = document.getElementById("ans9").value;
+		if(ans == 37) {
+			var res = "Correct!";
+			answer9 = true;
+			var circle = document.getElementsByClassName("questionButton");
+			circle[8].style.backgroundColor = "#4CDF27";
+		}
+		else {
+			var res = "Try Again!";
+		}
+
+		document.getElementsByClassName("result")[8].innerHTML = res;
+    checkEscape();
+	}
+
+  function checkquestion10() {
+        var ans = document.getElementById("ans10").value;
+		if(ans == 16) {
+			var res = "Correct!";
+			answer10 = true;
+			var circle = document.getElementsByClassName("questionButton");
+			circle[9].style.backgroundColor = "#4CDF27";
+		}
+		else {
+			var res = "Try Again!";
+		}
+
+		document.getElementsByClassName("result")[9].innerHTML = res;
+    checkEscape();
+	}
+
+  function checkEscape() {
+    var circles = document.getElementsByClassName("questionButton");
+  
+    if (answer1 && answer2 && answer3 && answer4 && answer5 && answer6 && answer7 && answer8 && answer9 && answer10) {
+      document.getElementById("escape").style.display = "block";
+    }
+  }
+</script>
 
 </body>
 </html>
