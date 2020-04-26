@@ -3,7 +3,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*INDEX PAGE*/
+/*INDEX PAGE----------------------------------------------------------------------------------------------------------------------*/
 /* Style the navigation bar */
 .indexBackground {
   background-image: url("indexBack.PNG");
@@ -36,7 +36,6 @@
 .center {
   padding-top: 5%;
   text-align: center;
-  /*border: 1px solid red;*/
 }
 
 #logo {
@@ -48,7 +47,6 @@
   padding-left: 5%;
   padding-right: 5%;
   font-family: Arial, Helvetica, sans-serif;
-  /*border: 1px red solid;*/
 }
 
 .description {
@@ -76,7 +74,6 @@
 }
 
 .rowPic {
-  /*border: red solid 1px;*/
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -115,80 +112,7 @@
   display: table;
 }
 
-/*PLAY PAGE*/
-.row {
-  padding-left: 100px;
-  padding-right:100px
-}
-
-.rooms {
-  margin-left: 3px;
-  text-align: center;
-}
-
-/*Info in Play tab*/
-.playdetails {
-  padding-left: 50px;
-  padding-right: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-/*button styling*/
-.btn {
-  border: 1px solid #f7300d;
-  background: none;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-family: "montserrat";
-  cursor: pointer;
-  margin: 130px;
-  transition: 0.8s;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn1,.btn2,.btn3,.btn4 {
-  color: #000305;
-}
-
-.btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover {
-  color: #fff;
-}
-
-.btn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background: #fa2408;
-  z-index: -1;
-  transition: 0.8s;
-}
-
-.btn1::before,.btn3::before,.btn2::before,.btn4::before {
-  top: 0;
-  border-radius: 0 0 50% 50%;
-}
- 
-.btn1:hover::before,.btn2:hover::before,.btn3:hover::before,.btn4:hover::before {
-  height: 180%;
-}
-
-/*Images in play tab styling*/
-.column {
-  float: left;
-  width: 25%;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/*ABOUT TAB*/
+/*ABOUT TAB----------------------------------------------------------------------------------------------------------------------*/
 .profilePic {
   border-radius: 50%;
   width: 250px;
@@ -198,97 +122,9 @@
   padding-left: 50px;
   padding-right: 50px;
   width: 25%;
-  border: red 1px solid;
 }
 
-/* Playroom */
-.roombody{
-  margin:30px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.container{
-  border-radius: 30px;
-  width:980px;
-  height: 640px;
-  background: rgb(87, 171, 240);
-  margin: 70px auto 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.container .box{
-  position: relative;
-  width: 300px;
-  height: 300px;
-  background: rgb(245, 220, 108);
-  margin:10px; /*btw pictures*/
-  box-sizing: border-box;
-  display: inline-block;
-  border-radius: 30px;
-}
-
-.container .box .imgbox {
-  position: relative;
-  overflow: hidden; /*image expands inside*/
-}
-
-.container .box .imgbox img {
-  border-radius: 30px 30px 0 0;
-  max-width: 100%;
-  transition: transform 1s; /**speed of picture*/
-}
-
-.container .box:hover .imgbox img {
-  transform: scale(1,1.4)
-}
-
-/*question appear &color/shape*/
-.container .box .word {
-  position: absolute;
-  top: 50px;
-  left: 10px;
-  bottom: 110px; /*to show answerbox*/
-  right: 10px;
-  background :#fedc95;
-  transform: scaleY(0); /*zero here*/
-  transition: transform 0.5s;
-  border-radius: 30px;
-}
-
-.container .box:hover .word {
-  transform: scaleY(1); /*one here*/
-}
-
-.container .box .word .question{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); /*middle*/
-  text-align:center;
-  padding: 20px; /*space btw texts and box*/
- 
-}
-
-/*question words font (color/size) */
-.container .box .word p{
-  margin: 10px 0 0 ;
-  padding: 3;
-  font-size:14;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color:black;
-}
-
-/*answer box*/
-.container .box .answer{
-  margin: 10px 0 0 ;
-  padding: 3;
-  text-align: center;
-}
-
-
-
-/*PLAY TAB EDITED*/
+/*PLAY TAB EDITED----------------------------------------------------------------------------------------------------------------------*/
 .titleplay { 
   font-size: 300%;
   font-family: fantasy, serif;
@@ -397,10 +233,39 @@ span {
   background-color: rgba(248, 42, 15, 0.938);
 }
 
-.image4{
-  margin-top: 50px;
-  margin-left: 100px;
+/*ROOM PAGES----------------------------------------------------------------------------------------------------------------------*/
+.row {
+  padding-left: 100px;
+  padding-right: 100px;
 }
+
+#roomPic {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.game {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+}
+
+.theRoom {
+  float: left;
+  width: 70%;
+  position: relative;
+  padding-right: 2.5%;
+}
+
+.questionBox {
+  border: black 3px solid;
+  background-color: #A1FFA0;
+  width: 30%;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+
 .column {
   float: left;
   width: 10%;
@@ -421,4 +286,34 @@ span {
   border: black solid 5px;
   font-size: 40px;
   background-color: white;
+}
+
+input[type=text] {
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 8px 0px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input[type=text]:focus {
+  border-color: black;
+  box-shadow: 0 0 8px 0 black;
+}
+
+#question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10 {
+  display: none;
+  float: left;
+  position: relative;
+}
+
+.result {
+  font-size: 14pt;
+}
+
+#escape {
+  display: none;
 }
